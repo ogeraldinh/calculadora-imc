@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(90deg, #800080, #7400b8, #502dc1);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.corpo h1 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #b0b0b0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.corpo h2 {
+  font-size: 1.25em;
+  font-weight: bolder;
+}
+
+.corpo {
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  padding: 40px;
+  gap: 25px;
+  background-color: #2b2b2b;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
+}
+
+.pergunta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  font-weight: bold;
+  margin: auto;
+  padding: auto;
+}
+
+.pergunta input {
+  border: none;
+  color: #dfdfdf;
+  background-color: transparent;
+  border-bottom: 2px solid #7400b8;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.pergunta input:focus {
+  outline: none;
+}
+.pergunta input:focus::placeholder {
+  color: transparent;
+}
+
+.corpo button {
+  height: 2em;
+  width: 100%;
+  border: none;
+  color: #fff;
+  background-color: #7400b8;
+  font-weight: bolder;
+  font-size: 1.25em;
+}
+.corpo button:hover {
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#resultado {
+  margin: 0;
+  padding: 0;
+  font-size: 1.25em;
+  font-weight: bolder;
+  color: #b0b0b0;
+}
+
+@media (max-width: 768px) {
+  .corpo {
+    width: 300px;
+    height: 500px;
+    padding: 20px;
+  }
+}
